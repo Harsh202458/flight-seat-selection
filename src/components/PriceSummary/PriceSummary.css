@@ -1,0 +1,96 @@
+.price-summary {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e5e7eb;
+}
+
+.price-summary__title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0 0 16px 0;
+}
+
+.price-summary__empty {
+  text-align: center;
+  padding: 24px 16px;
+  color: #9ca3af;
+}
+
+.price-summary__empty-icon {
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+
+.price-summary__empty p {
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.price-summary__items {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.price-summary__passenger {
+  padding-bottom: 12px;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.price-summary__passenger:last-child {
+  border-bottom: none;
+}
+
+.price-summary__passenger-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: #4b5563;
+  margin-bottom: 6px;
+}
+
+.price-summary__line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 0;
+}
+
+.price-summary__line-label {
+  font-size: 13px;
+  color: #374151;
+}
+
+.price-summary__line-cat {
+  color: #9ca3af;
+  font-size: 12px;
+}
+
+.price-summary__line-price {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1a1a2e;
+}
+
+.price-summary__line-price--free {
+  color: #059669;
+}
+
+.price-summary__total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0 0;
+  margin-top: 4px;
+  border-top: 2px solid #e5e7eb;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+.price-summary__total-amount {
+  color: #6366f1;
+  font-size: 20px;
+}
