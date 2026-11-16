@@ -277,7 +277,7 @@ This matches aviation industry standards for 2–3–2 twin-aisle cabins (such a
 
 1. Push your code to a public GitHub repository:
    ```bash
-   git remote add origin https://github.com/<your-username>/flight-seat-selection.git
+   git remote add origin https://github.com/Harsh202458/flight-seat-selection.git
    git branch -M main
    git push -u origin main
    ```
@@ -289,4 +289,4 @@ This matches aviation industry standards for 2–3–2 twin-aisle cabins (such a
    - **Build Command**: `npm run build`
    - **Output Directory**: `dist`
 6. Click **Deploy**.
-7. Once deployed, copy your production URL (e.g. `https://flight-seat-selection.vercel.app`) and verify in an incognito window.
+7. Once deployed, the production URL is live at [https://flight-seat-selection-xi.vercel.app](https://flight-seat-selection-xi.vercel.app).
