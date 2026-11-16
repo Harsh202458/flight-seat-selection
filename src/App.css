@@ -1,0 +1,140 @@
+/* ──────────────────────────────────────────
+   Global Styles
+   ────────────────────────────────────────── */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    sans-serif;
+  --color-bg: #f1f5f9;
+  --color-surface: #ffffff;
+  --color-primary: #6366f1;
+  --color-primary-dark: #4f46e5;
+  --color-text: #1a1a2e;
+  --color-text-secondary: #6b7280;
+  --max-width: 1280px;
+}
+
+body {
+  font-family: var(--font-family);
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* App layout */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.app__header {
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  color: white;
+  padding: 20px 24px;
+  box-shadow: 0 2px 12px rgba(99, 102, 241, 0.3);
+}
+
+.app__header-content {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.app__title {
+  font-size: 24px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  letter-spacing: -0.5px;
+}
+
+.app__title-icon {
+  font-size: 28px;
+}
+
+.app__subtitle {
+  font-size: 14px;
+  opacity: 0.85;
+  margin-top: 4px;
+}
+
+/* Main content */
+.app__main {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 24px;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 24px;
+  width: 100%;
+  flex: 1;
+}
+
+/* Sidebar */
+.app__sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.app__panel {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e5e7eb;
+}
+
+.app__panel-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 16px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .app__main {
+    grid-template-columns: 1fr;
+    padding: 16px;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .app__header {
+    padding: 16px 16px;
+  }
+
+  .app__title {
+    font-size: 20px;
+  }
+
+  .app__main {
+    padding: 12px;
+    gap: 12px;
+    padding-bottom: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .app__title {
+    font-size: 18px;
+  }
+
+  .app__subtitle {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,35 @@
+.mobile-total {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-total {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    border-top: 1px solid #e5e7eb;
+    padding: 14px 20px;
+    box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.08);
+    z-index: 50;
+  }
+
+  .mobile-total__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .mobile-total__count {
+    font-size: 13px;
+    color: #6b7280;
+  }
+
+  .mobile-total__amount {
+    font-size: 20px;
+    font-weight: 800;
+    color: #6366f1;
+  }
+}
