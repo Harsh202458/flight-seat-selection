@@ -1,0 +1,63 @@
+.meal-selector {
+  margin-top: 4px;
+}
+
+.meal-selector__label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #6b7280;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.meal-selector__options {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.meal-selector__option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  text-align: left;
+  width: 100%;
+}
+
+.meal-selector__option:hover {
+  border-color: #a5b4fc;
+}
+
+.meal-selector__option--active {
+  border-color: #6366f1;
+  background: #f5f3ff;
+}
+
+.meal-selector__veg-badge {
+  font-size: 12px;
+  flex-shrink: 0;
+}
+
+.meal-selector__option-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  flex: 1;
+}
+
+.meal-selector__option-name {
+  font-size: 12px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.meal-selector__option-price {
+  font-size: 11px;
+  color: #6b7280;
+}
