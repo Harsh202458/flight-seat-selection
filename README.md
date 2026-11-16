@@ -6,8 +6,8 @@ A modern, accessible, and responsive flight seat selection application built wit
 
 ## 🌐 Live Demo & Repository
 
-- **Live URL**: `https://flight-seat-selection-demo.vercel.app` *(or import to your Vercel account via the steps below)*
-- **GitHub Repository**: `https://github.com/<your-username>/flight-seat-selection`
+- **Live URL**: https://flight-seat-selection-xi.vercel.app
+- **GitHub Repository**: https://github.com/Harsh202458/flight-seat-selection
 
 ---
 
@@ -32,7 +32,7 @@ A modern, accessible, and responsive flight seat selection application built wit
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/<your-username>/flight-seat-selection.git
+git clone https://github.com/Harsh202458/flight-seat-selection.git
 cd flight-seat-selection
 
 # 2. Install dependencies
