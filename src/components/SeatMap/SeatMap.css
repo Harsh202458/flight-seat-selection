@@ -1,0 +1,161 @@
+.seat-map {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e5e7eb;
+}
+
+.seat-map__aircraft {
+  max-width: 440px;
+  margin: 0 auto;
+  overflow-x: auto;
+  padding: 0 8px;
+}
+
+/* Cockpit */
+.seat-map__cockpit {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.seat-map__cockpit-shape {
+  width: 60%;
+  height: 30px;
+  background: linear-gradient(to bottom, #e0e7ff, #f1f5f9);
+  border-radius: 50% 50% 0 0;
+  border: 2px solid #c7d2fe;
+  border-bottom: none;
+}
+
+/* Column headers */
+.seat-map__col-headers {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+.seat-map__col-spacer {
+  width: 24px;
+  flex-shrink: 0;
+}
+
+.seat-map__col-groups {
+  display: flex;
+  gap: 16px;
+  flex: 1;
+  justify-content: center;
+}
+
+.seat-map__col-group {
+  display: flex;
+  gap: 4px;
+}
+
+.seat-map__col-label {
+  width: 38px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  color: #6366f1;
+}
+
+/* Rows container */
+.seat-map__rows {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Skeleton loading */
+.seat-map__skeleton {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 20px 0;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.seat-map__skeleton-row {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.seat-map__skeleton-seat {
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Error state */
+.seat-map__error {
+  text-align: center;
+  padding: 40px 20px;
+  color: #6b7280;
+}
+
+.seat-map__error-icon {
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+
+.seat-map__error p {
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.seat-map__retry-btn {
+  padding: 8px 24px;
+  background: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.seat-map__retry-btn:hover {
+  background: #4f46e5;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .seat-map {
+    padding: 12px;
+    border-radius: 12px;
+  }
+
+  .seat-map__aircraft {
+    padding: 0;
+  }
+
+  .seat-map__col-label {
+    width: 32px;
+    font-size: 10px;
+  }
+
+  .seat-map__col-groups {
+    gap: 10px;
+  }
+
+  .seat-map__col-spacer {
+    width: 18px;
+  }
+}

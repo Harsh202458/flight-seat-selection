@@ -1,0 +1,31 @@
+.layout-toggle {
+  display: flex;
+  background: #f1f5f9;
+  border-radius: 10px;
+  padding: 4px;
+  gap: 4px;
+  margin-bottom: 16px;
+}
+
+.layout-toggle__btn {
+  flex: 1;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 600;
+  color: #64748b;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.layout-toggle__btn:hover {
+  color: #1e293b;
+}
+
+.layout-toggle__btn--active {
+  background: white;
+  color: #6366f1;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}

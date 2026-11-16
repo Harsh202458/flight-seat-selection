@@ -1,0 +1,53 @@
+.seat-row {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 0;
+}
+
+.seat-row__number {
+  width: 24px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  color: #6b7280;
+  flex-shrink: 0;
+}
+
+.seat-row__number--right {
+  text-align: center;
+}
+
+.seat-row__groups {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex: 1;
+  justify-content: center;
+}
+
+.seat-row__group {
+  display: flex;
+  gap: 4px;
+}
+
+.seat-row__empty-slot {
+  width: 38px;
+  height: 38px;
+}
+
+@media (max-width: 480px) {
+  .seat-row__groups {
+    gap: 10px;
+  }
+
+  .seat-row__number {
+    width: 18px;
+    font-size: 10px;
+  }
+
+  .seat-row__empty-slot {
+    width: 32px;
+    height: 32px;
+  }
+}
