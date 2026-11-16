@@ -273,20 +273,10 @@ This matches aviation industry standards for 2–3–2 twin-aisle cabins (such a
 
 ---
 
-## 🚢 Vercel Deployment Instructions
+## 🚢 Deployment & Hosting
 
-1. Push your code to a public GitHub repository:
-   ```bash
-   git remote add origin https://github.com/Harsh202458/flight-seat-selection.git
-   git branch -M main
-   git push -u origin main
-   ```
-2. Navigate to [vercel.com](https://vercel.com) and log in with your GitHub account.
-3. Click **Add New...** → **Project**.
-4. Select the `flight-seat-selection` repository and click **Import**.
-5. Vercel will automatically detect **Vite**:
-   - **Framework Preset**: `Vite`
-   - **Build Command**: `npm run build`
-   - **Output Directory**: `dist`
-6. Click **Deploy**.
-7. Once deployed, the production URL is live at [https://flight-seat-selection-xi.vercel.app](https://flight-seat-selection-xi.vercel.app).
+The application is deployed and hosted on **Vercel** with automatic continuous deployment connected to the `main` branch of this repository:
+
+- **Production URL**: [https://flight-seat-selection-xi.vercel.app](https://flight-seat-selection-xi.vercel.app)
+- **Hosting Platform**: Vercel
+- **Build Configuration**: Vite (`npm run build`) → Output directory: `dist`
